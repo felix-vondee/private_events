@@ -4,7 +4,7 @@ module UsersHelper
     end
 
     def current_user(id)
-        session[:current_user] = user.find(id)
+        session[:current_user] = User.find(id)
         session[:current_user]
     end
 end
