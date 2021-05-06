@@ -20,6 +20,7 @@ class UsersController < ApplicationController
   end
 
   def show
+    @users = User.all
     if session[:current_user]
       @user = User.find(params[:id])
       @created_events = current_user_now.events
