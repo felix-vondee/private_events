@@ -1,6 +1,8 @@
 
 # Private-Events
 
+![private_events](https://user-images.githubusercontent.com/55915241/117481870-ded42400-af63-11eb-9e58-c366f9ad2029.png)
+
 In this project we built a simple event creation and scheduling web app. Users can create events and other users can view event details and choose to attend. 
 
 ## Private-Events project features:
