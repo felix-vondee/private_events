@@ -2,8 +2,8 @@ class UsersController < ApplicationController
   include UsersHelper
 
   def new
-    if session[:current_user] #Check if there is a current user
-    redirect_to events_path
+    if session[:current_user] # Check if there is a current user
+      redirect_to events_path
     else
       @user = User.new
     end
