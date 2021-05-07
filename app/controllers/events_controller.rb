@@ -34,7 +34,7 @@ class EventsController < ApplicationController
   def add_attendee
     event = Event.find(params[:id])
     user = User.find(session[:current_user]['id'])
-    event.attendees << user unless event.attendees.include? user
+    event.attend << user unless event.attend.include? user
     redirect_to event_path(params[:id])
   end
 end
