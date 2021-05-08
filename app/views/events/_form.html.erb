@@ -1,0 +1,12 @@
+
+<%= simple_form_for(@event) do |f| %>
+    <%= f.error_notification%>
+    <%= f.input :name %>
+    <br>
+    <%= f.input :description %>
+    <br>
+    <%= f.date_field :date %>
+    <br><br>
+    <%= f.input :location %>
+    <%= f.submit class: 'btn btn-primary mt-3 float-end' %>
+<% end %>
