@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_06_133813) do
+ActiveRecord::Schema.define(version: 2021_05_07_215107) do
 
   create_table "attendees", force: :cascade do |t|
     t.integer "user_id", null: false
@@ -40,5 +40,5 @@ ActiveRecord::Schema.define(version: 2021_05_06_133813) do
 
   add_foreign_key "attendees", "events"
   add_foreign_key "attendees", "users"
- 
+  add_foreign_key "events", "users"
 end
